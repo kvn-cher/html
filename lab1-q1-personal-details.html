@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Submit Your Details </title>
+  </head>
+  <body>
+    <form method="get">
+      <label for="name"> name: </label> 
+      <input type="text" id="name" name="name" required maxlength="25" placeholder="John"><br><br>
+      <label for="email"> email: </label> 
+      <input type="text" id="email" name="email" required value="test@example.com" autofocus><br>
+      <br><label for="password"> password: </label>
+      <input type="password" id="password" name="password" required minlength="6"><br><br>
+      <label for="category">category:</label>
+      <select id="category" name="category" required>
+        <option value="student">student</option>
+        <option value="employee">employee</option>
+        <option value="freelancer" selected>freelancer</option>
+      </select><br><br>
+      <label for="edate">event date:</label>
+      <input type="date" id="edate" name="edate" required><br><br>
+      <label for="tickets">tickets:</label>
+      <input type="radio" name="tickets" value="1ticket" required> 1 ticket
+      <input type="radio" name="tickets" value="2tickets" required checked> 2 tickets
+      <input type="radio" name="tickets" value="3tickets" required> 3 tickets <br><br>
+      <label for="payment">payment:</label>
+      <input type="checkbox" id="payment" name="payment" required>online payment<br><br>
+      <label for="notes">notes:</label><br>
+      <textarea rows = "10" cols = "30" id="notes" name = "notes" placeholder="note"></textarea><br>
+      <input type = "submit" value = "submit">
+    </form>
+  </body>
+</html>
